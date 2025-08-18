@@ -348,7 +348,7 @@ export default function HomePage() {
           justifyContent: 'center',
           gap: '20px',
           marginTop: '20px',
-          // flexDirection: 'column'
+          flexWrap: 'wrap'
         }}
       >
 
@@ -367,6 +367,7 @@ export default function HomePage() {
           ></canvas>
         </div>
       </div>
+
        {jsExecutionTime !== null && (
               <p style={{ color: 'orange' , fontSize: '16px'}}>
                 JavaScript Execution Time: {jsExecutionTime.toFixed(2)} ms

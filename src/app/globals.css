@@ -1,13 +1,13 @@
-/* Desktop Screen */
 .canvas {
   border: 1px solid black;
   max-width: 400px;
+  width: 100%; /* make it shrink naturally */
   height: auto;
 }
 
-/* Mobile Screen */
-@media (max-width: 400px) {
+/* For very small screens ≤400px */
+@media (max-width: 430px) {
   .canvas {
-    max-width: 170px;
+    max-width: 130px;
   }
 }
