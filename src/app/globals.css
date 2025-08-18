@@ -1,0 +1,13 @@
+/* Desktop Screen */
+.canvas {
+  border: 1px solid black;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Mobile Screen */
+@media (max-width: 400px) {
+  .canvas {
+    max-width: 170px;
+  }
+}

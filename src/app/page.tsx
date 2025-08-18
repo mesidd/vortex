@@ -348,39 +348,32 @@ export default function HomePage() {
           justifyContent: 'center',
           gap: '20px',
           marginTop: '20px',
+          // flexDirection: 'column'
         }}
       >
 
         <div>
           <h2>Original</h2>
           <canvas
+            className='canvas'
             ref={originalCanvasRef}
-            style={{
-              border: '1px solid black',
-              maxWidth: '400px',
-              height: 'auto',
-            }}
           ></canvas>
         </div>
         <div>
           <h2>Processed</h2>
           <canvas
+            className='canvas'
             ref={processedCanvasRef}
-            style={{
-              border: '1px solid black',
-              maxWidth: '400px',
-              height: 'auto',
-            }}
           ></canvas>
         </div>
       </div>
        {jsExecutionTime !== null && (
-              <p style={{ color: 'orange' , fontSize: '20px'}}>
+              <p style={{ color: 'orange' , fontSize: '16px'}}>
                 JavaScript Execution Time: {jsExecutionTime.toFixed(2)} ms
               </p>
             )}
             {wasmExecutionTime !== null && (
-              <p style={{ color: 'green' , fontSize:'20px'}}>
+              <p style={{ color: 'green' , fontSize:'16px'}}>
                 WASM (C++) Execution Time: {wasmExecutionTime.toFixed(2)} ms
               </p>
             )}
