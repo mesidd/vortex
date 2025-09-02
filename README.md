@@ -1,4 +1,4 @@
-# Next.js + C++ WebAssembly Image Processor
+# Vortex - Next.js + C++ WebAssembly Image Processor
 
 Run C++ functions directly in the browser for CPU-intensive tasks like image processing using WebAssembly (.wasm), fully integrated into a Next.js frontend.
 
